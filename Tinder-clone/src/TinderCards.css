@@ -1,0 +1,71 @@
+.swipe {
+  position: absolute;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  /* background-color: blue; */
+  margin-top: 10vh;
+}
+
+.card {
+  position: relative;
+  background-color: #fff;
+  width: 500px;
+  /* max-width: 260px; */
+  height: 500px;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.cardContent {
+  width: 100%;
+  height: 100%;
+}
+
+.card h3 {
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+  color: red;
+}
+
+.infoText {
+  width: 100%;
+  /* height: 28px; */
+  justify-content: center;
+  display: flex;
+  color: black;
+  animation-name: popup;
+  animation-duration: 800ms;
+  margin-top: 30vh;
+  /* background-color: blue; */
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(1.1, 1.1);
+  }
+  30% {
+    transform: scale(0.9, 0.9);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  57% {
+    transform: scale(1, 1);
+  }
+  64% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
